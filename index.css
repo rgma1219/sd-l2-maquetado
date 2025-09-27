@@ -207,6 +207,14 @@ body {
     background-color: white;
 }
 
+@media (min-width: 769px) {
+    .section-2 {
+        width: 100%;
+        height: 604px;
+        background-color: white;
+    }
+}
+
 .section-2__titulo-secundario {
     font-size: 32px;
     font-weight: 700;
@@ -225,6 +233,15 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 44px;
+}
+
+@media (min-width: 769px) {
+    .section-2__contenedor {
+        height: 312px;
+        display: flex;
+        flex-direction: row;
+        padding: 0 80px;
+    }
 }
 
 .section-2__subcontenedor {
@@ -261,6 +278,22 @@ body {
     height: 660px;
     background-color: black;
     border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 769px) {
+    .section-3__contenedor {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .section-3__titulo-secundario {
@@ -268,10 +301,15 @@ body {
     font-weight: 700;
     font-family: "Open Sans";
     text-align: center;
-    width: 271px;
     color: white;
-    margin: 0 auto;
-    padding-top: 55px;
+    padding-bottom: 20px;
+}
+
+@media (min-width: 769px) {
+    .section-3__titulo-secundario {
+        padding-bottom: 0;
+        padding-right: 50px;
+    }
 }
 
 .section-3__form {
@@ -279,8 +317,6 @@ body {
     display: grid;
     gap: 25px;
     max-width: 450px;
-    margin: 0 auto;
-    padding-top: 35px;
 }
 
 .label {
@@ -332,6 +368,28 @@ body {
     justify-content: space-around;
 }
 
+@media (min-width: 769px) {
+    .footer {
+        height: 383px;
+    }
+}
+
+.footer__contenedor {
+    height: 383px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media (min-width: 769px) {
+    .footer__contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 140px 0 60px;
+        align-items: center;
+    }
+}
+
 .footer__logo {
     width: 78px;
     height: 78px;
@@ -349,7 +407,6 @@ body {
 .footer__redes {
     display: grid;
     gap: 20px;
-    padding-bottom: 40px;
 }
 
 .contenedor-icono-red {
